@@ -75,15 +75,7 @@ function App() {
   return (
     <CartContext.Provider value={ctxValue}>
       <Header />
-      <Shop >
-
-        {DUMMY_PRODUCTS.map((product) => (
-          <li key={product.id}>
-            <Product {...product}  />
-          </li>
-        ))}
-
-      </Shop>
+      <Shop />
     </CartContext.Provider>
   );
 }
